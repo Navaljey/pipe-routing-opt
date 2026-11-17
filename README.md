@@ -9,3 +9,11 @@ walking skeleton(`Navaljey/pipe-routing-skeleton`)의 다중 배관 슬롯에 �
 - 사양 · 결정 · 단계: [`CLAUDE.md`](CLAUDE.md)
 - 심판: skeleton 커밋 `cd9c13e` 고정 (이 레포에서 수정하지 않는다)
 - 이름 규칙: `OPT.Dec` (결정) · `OPT.Req` (요구사항) · `OPT.Stage` (단계) · `OPT.Question` (질문) · `Skeleton.Dec후보` (skeleton 에 올릴 결정)
+
+## 설치
+
+```
+git clone --recurse-submodules https://github.com/Navaljey/pipe-routing-opt
+pip install -r skeleton/requirements.txt
+python -m opt.judge_check        # 심판 일치 확인 (OPT.Req9) — 비공개 서포트 표: PIPE_SUPPORT_STANDARD
+```
