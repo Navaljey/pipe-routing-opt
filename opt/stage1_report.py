@@ -23,7 +23,7 @@ def main(argv=None) -> int:
     rows, summ = [], {}
     for key, name in SETS:
         R = {"set": name, "scen": 0, "pipes": 0, "excl": 0, "ok": 0, "unreach": 0, "timeout": 0,
-             "c1": 0, "c2": 0, "c3": 0, "c3_single": 0, "c3_multi": 0, "c3_none": 0, "pairs": 0, "inv": 0,
+             "c1": 0, "c2": 0, "c3": 0, "c3_single": 0, "c3_multiple": 0, "c3_none": 0, "pairs": 0, "inv": 0,
              "solo_pass": 0, "multi_pass": 0, "w1": [], "w2": [], "cpu1": 0.0, "cpu2": 0.0, "exp": 0,
              "same": 0, "both": 0, "csec": 0.0, "rss1": 0.0, "rss2": 0.0, "missing": []}
         for r in man["sets"][key]:
@@ -71,8 +71,8 @@ def main(argv=None) -> int:
     print("|---|---|---|---|---|---|---|---|")
     for R in rows:
         ratio = R["inv"] / R["ok"] * 100 if R["ok"] else 0
-        print(f"| {R['set']} | {R['c1']} | {R['c2']} | {R['c3']} | {R['c3_single'] + R['c3_multi'] + R['c3_none']} "
-              f"({R['c3_single']} / {R['c3_multi']} / {R['c3_none']}) | {R['pairs']} | {R['inv']} / {R['ok']} "
+        print(f"| {R['set']} | {R['c1']} | {R['c2']} | {R['c3']} | {R['c3_single'] + R["c3_multiple"] + R['c3_none']} "
+              f"({R['c3_single']} / {R["c3_multiple"]} / {R['c3_none']}) | {R['pairs']} | {R['inv']} / {R['ok']} "
               f"({ratio:.1f}%) | {R['pairs'] / max(R['scen'], 1):.1f} |")
     print()
     print("| 세트 | 루트 벽시계 순차 합 (s) | 순차 시나리오 중앙 / 최대 (s) | 작업자 2 합 (s) | 작업자 2 중앙 / 최대 (s) | 합 비 (2 / 1) | CPU 합 순차 / 작업자 2 (s) | 확장 합 | 결정성 (같음 / 둘 다 잰 시나리오) | 충돌 검출 합 (s) | 최대 RSS 순차 / 작업자 (GB) |")
@@ -83,6 +83,33 @@ def main(argv=None) -> int:
         ratio = (sum(w2) / sum(w1[:len(w2)])) if w2 else float("nan")
         print(f"| {R['set']} | {f(sum(w1))} | {md(w1)} | {f(sum(w2))} | {md(w2)} | {ratio:.2f} | {f(R['cpu1'])} / {f(R['cpu2'])} "
               f"| {f(R['exp'])} | {R['same']} / {R['both']} | {f(R['csec'])} | {R['rss1'] / 1024:.1f} / {R['rss2'] / 1024:.1f} |")
+    print()
+    print("| 세트 | 충돌 그래프 덩어리 수 (배관 2 이상) | 가장 큰 덩어리 (배관) | 덩어리 크기 중앙 | 배관당 충돌 상대 최대 |")
+    print("|---|---|---|---|---|")
+    for key, name in SETS:
+        comps, degmax = [], 0
+        for r in man["sets"][key]:
+            a = load(out, 1, Path(r["file"]).stem)
+            if a is None:
+                continue
+            c = a["conflicts"]
+            adj = {}
+            for x, y in c["conflict1_pairs"] + c["conflict2_pairs"] + c["conflict3_pairs"]:
+                adj.setdefault(x, set()).add(y); adj.setdefault(y, set()).add(x)
+            degmax = max([degmax] + [len(v) for v in adj.values()])
+            seen = set()
+            for v in sorted(adj):
+                if v in seen:
+                    continue
+                stack, comp = [v], 0
+                seen.add(v)
+                while stack:
+                    u = stack.pop(); comp += 1
+                    for w in adj[u]:
+                        if w not in seen:
+                            seen.add(w); stack.append(w)
+                comps.append(comp)
+        print(f"| {name} | {len(comps)} | {max(comps, default=0)} | {st.median(comps) if comps else 0} | {degmax} |")
     miss = [m for R in rows for m in R["missing"]]
     if miss:
         print(f"\n빠진 결과: {miss}")

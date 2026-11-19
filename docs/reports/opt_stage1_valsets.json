@@ -1,0 +1,1085 @@
+{
+ "seed_offset": 20000000,
+ "sets": {
+  "base": [
+   {
+    "file": "base/val_proc_000.json",
+    "seed": 40261008,
+    "pipes": 10,
+    "sha256": "63bfba008c983ef7de0bc76b39c8fdd134949bca6d8aa4a2eebdb45412cd01de",
+    "config": {
+     "seed": 40261008,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_001.json",
+    "seed": 40261009,
+    "pipes": 10,
+    "sha256": "f35f0e3547ec81e4bdcdf246408d50e953236d44119e15672456164525549f64",
+    "config": {
+     "seed": 40261009,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_002.json",
+    "seed": 40261010,
+    "pipes": 10,
+    "sha256": "a2b8770c2da806a6f39916719b5fa3dad906e4dc2c610652904b2101afbfa2b2",
+    "config": {
+     "seed": 40261010,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_003.json",
+    "seed": 40261011,
+    "pipes": 10,
+    "sha256": "1940de02e51121b4da288486812b48a0efc5d88495eef2f321052c81b2786943",
+    "config": {
+     "seed": 40261011,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_004.json",
+    "seed": 40261012,
+    "pipes": 10,
+    "sha256": "c16f7be4e8fe4080e54cdbed31806aeb24e059aa4681b7ba2e35c9e863feab94",
+    "config": {
+     "seed": 40261012,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_005.json",
+    "seed": 40261013,
+    "pipes": 10,
+    "sha256": "cb728aa76958b3e8b25bddf30b033d93efe1fd4c3008ecbf6872b26ad8237371",
+    "config": {
+     "seed": 40261013,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_006.json",
+    "seed": 40261014,
+    "pipes": 10,
+    "sha256": "135c9c4c644432a5cd16fdd7a06ce9a6df63df3773a1c9e64a184e0d14fbff3f",
+    "config": {
+     "seed": 40261014,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_007.json",
+    "seed": 40261015,
+    "pipes": 10,
+    "sha256": "169873ac060899250e47c187115262c239bed545caf1155740f0c86bb0e4b6fa",
+    "config": {
+     "seed": 40261015,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_008.json",
+    "seed": 40261016,
+    "pipes": 10,
+    "sha256": "40e6d1fdf434564a8f413fd9fdc561111cc6e4668a672b60cbe0d52ebe4316b0",
+    "config": {
+     "seed": 40261016,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_009.json",
+    "seed": 40261017,
+    "pipes": 10,
+    "sha256": "85e244ac22bbc2c49d2f3a46d4a414bb61badea4332833baba461e0fba8afa61",
+    "config": {
+     "seed": 40261017,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_010.json",
+    "seed": 40261018,
+    "pipes": 10,
+    "sha256": "e2363678c8afb5ad4a05f8485bc199f91f9f934c37d401d9afb5ca690dd45a6d",
+    "config": {
+     "seed": 40261018,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_011.json",
+    "seed": 40261019,
+    "pipes": 10,
+    "sha256": "ff848f94e43ff38bf467b23830219d12aecf39338cc5150246f45a809267c470",
+    "config": {
+     "seed": 40261019,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_012.json",
+    "seed": 40261020,
+    "pipes": 10,
+    "sha256": "4a4e0e8bdfc34ae797b017b293d81898d283b5b506a90ed6a18638ad8010ee57",
+    "config": {
+     "seed": 40261020,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_013.json",
+    "seed": 40261021,
+    "pipes": 10,
+    "sha256": "cde7c669457af70e609bcfa057042947fef4d5b710178b13f427dbc9ea2c7d0c",
+    "config": {
+     "seed": 40261021,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_014.json",
+    "seed": 40261022,
+    "pipes": 10,
+    "sha256": "c81f345b616ba9097930b9366843b178a718824b858fdea134524e73fc60c8ab",
+    "config": {
+     "seed": 40261022,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_015.json",
+    "seed": 40261023,
+    "pipes": 10,
+    "sha256": "20c0816ad93d4144c6d605c7e4bfbc057bb9178f78ea7c9ca14bf30be408f9fa",
+    "config": {
+     "seed": 40261023,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_016.json",
+    "seed": 40261024,
+    "pipes": 10,
+    "sha256": "808cf39b0cbf87cc00ca4aa58210bef0a39620b991e9f1ccd554efa837c5e302",
+    "config": {
+     "seed": 40261024,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_017.json",
+    "seed": 40261025,
+    "pipes": 10,
+    "sha256": "f710f2ad20fc358b096acaa673b5fb278e8ad01c5f9d83263abac16511f47c60",
+    "config": {
+     "seed": 40261025,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_018.json",
+    "seed": 40261026,
+    "pipes": 10,
+    "sha256": "f91a28bac6e755587e13dbf7cbbbb3da2d1265d38d5a92b424da2bbe38aeaf07",
+    "config": {
+     "seed": 40261026,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "base/val_proc_019.json",
+    "seed": 40261027,
+    "pipes": 10,
+    "sha256": "444993d7cbf2c09086b198f669b58a54a8fe77d6995c01b427dde754c208c782",
+    "config": {
+     "seed": 40261027,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   }
+  ],
+  "stair": [
+   {
+    "file": "stair/val_stair10_000.json",
+    "seed": 40264008,
+    "pipes": 10,
+    "sha256": "a7f4081288d39c51656fc39069f5a6e33e82c1de498179f306199f2dfeb6e1dd",
+    "config": {
+     "seed": 40264008,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": true,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "stair/val_stair10_001.json",
+    "seed": 40264009,
+    "pipes": 10,
+    "sha256": "cec35d3c87787e1d9e08002d67869cb1012381e0134946a13beba86945eba07d",
+    "config": {
+     "seed": 40264009,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": true,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "stair/val_stair10_002.json",
+    "seed": 40264010,
+    "pipes": 10,
+    "sha256": "9b0eed73f9e01db4fbd9a63e23f163aeb52b25a28c275055c52d321511fda8f0",
+    "config": {
+     "seed": 40264010,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": true,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "stair/val_stair10_003.json",
+    "seed": 40264011,
+    "pipes": 10,
+    "sha256": "04278efcf3d2d1cf8b99eb131c065d988f7de09b97de9a7102d5fecbc30936a7",
+    "config": {
+     "seed": 40264011,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": true,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "stair/val_stair10_004.json",
+    "seed": 40264012,
+    "pipes": 10,
+    "sha256": "7933aecbeb8978578e04224e87c09d59417ac0e71c5f8eaa6eda9331eb070ac5",
+    "config": {
+     "seed": 40264012,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 10,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": true,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   }
+  ],
+  "dense30": [
+   {
+    "file": "dense30/val_dense30_000.json",
+    "seed": 40262008,
+    "pipes": 30,
+    "sha256": "d383194811885c270f14efaf47c696bb7ed5f14d9512d01831f5366ed362ffa9",
+    "config": {
+     "seed": 40262008,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 30,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense30/val_dense30_001.json",
+    "seed": 40262009,
+    "pipes": 30,
+    "sha256": "0f641fd112afb033843b5da8259a51e7a5bdbbb3f075d43d0fa23095c3744698",
+    "config": {
+     "seed": 40262009,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 30,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense30/val_dense30_002.json",
+    "seed": 40262010,
+    "pipes": 30,
+    "sha256": "5cd003c92a6f8e59414ef013096f0a5803bd0791d92fb105a7c75833a5efe8e6",
+    "config": {
+     "seed": 40262010,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 30,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense30/val_dense30_003.json",
+    "seed": 40262011,
+    "pipes": 30,
+    "sha256": "2788bf2fdc8f4980d81291d1c22f3c751a28e1d0474e013674c0a0c0e7027110",
+    "config": {
+     "seed": 40262011,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 30,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense30/val_dense30_004.json",
+    "seed": 40262012,
+    "pipes": 30,
+    "sha256": "235a961835ce524e2922f35ba50066dd0232819436f526df7a7b46bb00e5b0b8",
+    "config": {
+     "seed": 40262012,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 30,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   }
+  ],
+  "dense50": [
+   {
+    "file": "dense50/val_dense50_000.json",
+    "seed": 40263008,
+    "pipes": 50,
+    "sha256": "210511e06c1c08feb1baa9bcbc898f47a97828d55e7d27bb9b6b72bd9446961e",
+    "config": {
+     "seed": 40263008,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 50,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense50/val_dense50_001.json",
+    "seed": 40263009,
+    "pipes": 50,
+    "sha256": "7ce4e604a50aba31f76ea94d155c0c580710e72ff404bcd699f67b1035d49ea9",
+    "config": {
+     "seed": 40263009,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 50,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense50/val_dense50_002.json",
+    "seed": 40263010,
+    "pipes": 50,
+    "sha256": "97ee403b6dd95084b7efc23a8f612311292701f2c320f1b647a9600ec3feb492",
+    "config": {
+     "seed": 40263010,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 50,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense50/val_dense50_003.json",
+    "seed": 40263011,
+    "pipes": 50,
+    "sha256": "bb3dc02910d675919b5d3903f8fd569a1db30e45389af19f35f454d4e55f8127",
+    "config": {
+     "seed": 40263011,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 50,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   },
+   {
+    "file": "dense50/val_dense50_004.json",
+    "seed": 40263012,
+    "pipes": 50,
+    "sha256": "5a34065a1e2934775925cd8acfa5d280ff97f9b7614d539968adff15769c1fa9",
+    "config": {
+     "seed": 40263012,
+     "obstacle_fill": 0.12,
+     "box_xy_mm": [
+      4000,
+      8000
+     ],
+     "box_z_mm": [
+      1000,
+      4000
+     ],
+     "max_boxes": 1000,
+     "n_pipes": 50,
+     "gravity_ratio": 0.3,
+     "nozzle_ratio": 0.5,
+     "deck_ratio": 0.5,
+     "min_terminal_dist_mm": 5000,
+     "max_tries": 500,
+     "stair_rule": false,
+     "d94_rule": false,
+     "exclude_faces": []
+    }
+   }
+  ],
+  "pair": [
+   {
+    "file": "pair/val_pair_000.json",
+    "seed": 40265008,
+    "pipes": 24,
+    "sha256": "b8601e7986fbbf3a27e246d54fdfaab16b51f5c29e2f0beb408ca8489bf6cb0f",
+    "config": {
+     "seed": 40265008,
+     "n_pipes_per_block": 10,
+     "n_crossing": 4,
+     "window_mm": [
+      4000,
+      2000
+     ],
+     "wall_thickness": 20.0,
+     "stair_rule": true,
+     "d94_rule": true
+    }
+   },
+   {
+    "file": "pair/val_pair_001.json",
+    "seed": 40265009,
+    "pipes": 24,
+    "sha256": "e997ac18816ddf30aa51362ab9f12ec332d4632f6dfcbb2851e33d13cf8dfbde",
+    "config": {
+     "seed": 40265009,
+     "n_pipes_per_block": 10,
+     "n_crossing": 4,
+     "window_mm": [
+      4000,
+      2000
+     ],
+     "wall_thickness": 20.0,
+     "stair_rule": true,
+     "d94_rule": true
+    }
+   },
+   {
+    "file": "pair/val_pair_002.json",
+    "seed": 40265010,
+    "pipes": 24,
+    "sha256": "447b89462474e53bbadcf36fd384ab1b051bafc0ffcd3c20e10d236ceb9421e7",
+    "config": {
+     "seed": 40265010,
+     "n_pipes_per_block": 10,
+     "n_crossing": 4,
+     "window_mm": [
+      4000,
+      2000
+     ],
+     "wall_thickness": 20.0,
+     "stair_rule": true,
+     "d94_rule": true
+    }
+   },
+   {
+    "file": "pair/val_pair_003.json",
+    "seed": 40265011,
+    "pipes": 24,
+    "sha256": "69c28419815838cf81b1763b73bdd958ba85850560889af7a188cd358e47ee80",
+    "config": {
+     "seed": 40265011,
+     "n_pipes_per_block": 10,
+     "n_crossing": 4,
+     "window_mm": [
+      4000,
+      2000
+     ],
+     "wall_thickness": 20.0,
+     "stair_rule": true,
+     "d94_rule": true
+    }
+   },
+   {
+    "file": "pair/val_pair_004.json",
+    "seed": 40265012,
+    "pipes": 24,
+    "sha256": "12fd5acf585f8c21ae5488a656a455734f12830c0c394832e95c48db234836c9",
+    "config": {
+     "seed": 40265012,
+     "n_pipes_per_block": 10,
+     "n_crossing": 4,
+     "window_mm": [
+      4000,
+      2000
+     ],
+     "wall_thickness": 20.0,
+     "stair_rule": true,
+     "d94_rule": true
+    }
+   }
+  ]
+ }
+}
