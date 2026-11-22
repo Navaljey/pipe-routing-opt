@@ -93,10 +93,11 @@ class Search:
                 if self.conflict(a, wa, b, st.routes[b].waypoints):
                     out.append((a, b, 1))
         have = {x[:2] for x in out}
-        for a in ids:   # 충돌 2: 경로 ↔ 다른 배관 (실패로 둔 배관 제외) 의 단자 예약 — 루트에서 0, 확인만
+        for a in ids:   # 충돌 2: 경로 ↔ 아직 놓이지 않은 배관의 단자 예약 (D59 — 놓인 배관의 예약은 실제 경로로 대체,
+            #           실패로 둔 배관은 놓이지 않는다). 모든 배관이 경로를 가진 상태에서는 대상이 없다 — 확인만
             for qid in self.resv_hits(a, st.routes[a].waypoints):
                 k = tuple(sorted((a, qid)))
-                if qid not in st.failed and k not in have:
+                if qid not in st.failed and qid not in st.routes and k not in have:
                     out.append(k + (2,))
                     have.add(k)
         return out
@@ -207,6 +208,10 @@ class Search:
             kids = []
             for a, b, tag in ((p, q, "ga"), (q, p, "na")):
                 k = self.child(st, a, b)
+                if k is not None and (p, q, kind) in self.conflicts(k, {p, q}):
+                    # 다시 깔았는데 고른 충돌이 그대로면 그 자식은 버린다 (라우터 ↔ 충돌 판정 불일치 — 기록)
+                    self.log.setdefault("unresolved_child", []).append([p, q, kind, tag])
+                    k = None
                 if k is not None:
                     kids.append((sum(rcost(r) for r in k.routes.values()), 0 if tag == "ga" else 1, tag, k))
             if kids:
