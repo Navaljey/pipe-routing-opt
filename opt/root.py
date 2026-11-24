@@ -28,6 +28,8 @@ class RootPipe:
     waypoints: list = field(default_factory=list)
     expanded: int = 0
     J_router: float | None = None
+    J_support_est: float = 0.0
+    J_penetration: float = 0.0
     search_sec: float = 0.0
     graph_sec: float = 0.0
 
@@ -44,9 +46,14 @@ def _route_ids(path: str, ids: list) -> tuple:
     out = []
     for pid in ids:
         r = layered_router_a(sc, pipes[pid], TIME_LIMIT, placed=())
-        out.append(RootPipe(pid, r.status, [list(map(float, w)) for w in (r.waypoints or [])] if r.status == "ok" else [],
-                            int(r.expanded or 0), (float(r.J) if r.status == "ok" and r.J is not None else None),
-                            float(r.search_sec), float(getattr(r, "graph_sec", 0.0) or 0.0)))
+        ok = r.status == "ok"
+        out.append(RootPipe(pid, r.status,
+                            waypoints=[list(map(float, w)) for w in (r.waypoints or [])] if ok else [],
+                            expanded=int(r.expanded or 0),
+                            J_router=(float(r.J) if ok and r.J is not None else None),
+                            J_support_est=float(r.J_support_est or 0.0) if ok else 0.0,
+                            J_penetration=float(getattr(r, "J_penetration", 0.0) or 0.0) if ok else 0.0,
+                            search_sec=float(r.search_sec), graph_sec=float(getattr(r, "graph_sec", 0.0) or 0.0)))
     return out, time.process_time() - c0, time.perf_counter() - w0
 
 
