@@ -73,12 +73,14 @@
 
 `props` 의 열 이름과 값 목록은 섹션 4) 결과를 따르며, 이 문서는 열 이름을 고정하지 않는다. 처음 보는 서비스라도 속성 값으로 풀려 있으면 망이 읽을 수 있다 — 이것이 섹션 4) 에 요청한 조건이다.
 
-#### 3.1a 섹션 4) 표 형식 v0.1 에 맞춘 자리 (2026-11-24 회신 — **구현 고정 안 함**, 섹션 4) 형식 v1.0 확정 후 고정)
+#### 3.1a 섹션 4) 표 형식 v0.2 에 맞춘 자리 (2026-11-24 v0.1 → 2026-11-25 v0.2 — **구현 고정 안 함**, 섹션 4) 형식 v1.0 확정 후 고정)
 
-- 읽는 길: OPT 는 표를 직접 읽지 않는다. skeleton 공개 조회 `service_props(pipe)` · `obstacle_props(obstacle)` · `pair_relation(pipe_a, pipe_b)` · `forbidden_at(구간)` 로만 읽는다 (나오기 전에는 `null`).
-- 배관 `props` (표 A): `fluid_kind` · `flammability` · `toxic` · `design_temp_max` · `flow_mode` · `insulation_kind` · `material` · `baseline_priority` · `flag_*`. **`service_code` · `parent` 는 식별자라 `id`** 로 둔다 (OPT.Dec25).
+- 읽는 길: OPT 는 표를 직접 읽지 않는다. skeleton 공개 조회 `service_props(pipe)` · `obstacle_props(obstacle)` · `pair_relation(pipe_a, pipe_b)` · `obstacle_relation(pipe, obstacle)` · `forbidden_at(구간)` 로만 읽는다 (나오기 전에는 `null`).
+- 서비스 코드 = `{서비스}.{용도}` (열 `usage`, 예: FO.supply). "계통" 은 D134 분기 계통 전용이다.
+- 단위: 길이 · 거리는 모두 mm, 온도는 ℃.
+- 배관 `props` (표 A): `fluid_kind` · `flammability` · `toxic` · `design_temp_max` · `flow_mode` · `insulation_kind` · `material` · `flag_*`. **`service_code` · `parent` 는 식별자라 `id`** 로 둔다 (OPT.Dec25). `baseline_priority` 는 v0.2 에서 없어졌다 — 배관 사이 우선순위는 속성에서 학습 · 최적화가 구할 대상이다 (OPT.Question14).
 - 장애물 `props` (표 B): `obstacle_kind` · `supportable` · `penetrable` · `hot` · `electrical` · `surface_temp_max`.
-- 쌍 관계 (표 D, §4 쌍 특징): `pair_relation` 이 돌려주는 규칙마다 (`rule_kind`, `layer`, `param`, `coefficient`) — `rule_id` 는 `id`. 장애물 쪽 규칙 (`selector_b` = 장애물 속성 조건) 은 배관 - 장애물 관계 특징으로 받는다.
+- 쌍 관계 (표 D, §4 쌍 특징): `pair_relation` · `obstacle_relation` 이 `[(rule_id, rule_kind, layer, param, coefficient), …]` 를 돌려준다. `rule_id` 는 `id` (망 입력에서 빼고, 로그에는 값 대신 `rule_id` 만 남긴다). `bundle_allowed` 는 v0.2 에서 **허용 표시** (참 / 거짓, layer · coefficient 없음) 다 — 음의 벌점은 없고, 묶음 이득은 검증기 서포트 공유 (D82) 로만 생긴다.
 - 단일 배관 규칙 (표 C) 은 배관 하나로 정해져 기준선 라우터 비용으로 들어온다 (OPT.Req14) — 기록에는 그 배관에 걸린 규칙 수 · 종류만 `feat` 로 둔다.
 - 머리 기록에 **형식 버전 · 데이터 버전 · 표 sha256** 을 적는다 (값은 적지 않는다, 섹션 4) §8). 기록 파일 자체는 비공개 값이 들어가므로 레포 밖에만 둔다 (§2).
 
