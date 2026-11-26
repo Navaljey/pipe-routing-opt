@@ -1,4 +1,4 @@
-"""skeleton (서브모듈, cd9c13e 고정 — OPT.Dec9) 을 import 경로에 넣는다. skeleton 코드는 고치지 않는다."""
+"""skeleton (서브모듈, 55b0e35 고정 (OPT.Dec34, 이전 cd9c13e) — OPT.Dec9) 을 import 경로에 넣는다. skeleton 코드는 고치지 않는다."""
 import sys
 from pathlib import Path
 

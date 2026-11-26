@@ -1,6 +1,6 @@
 """OPT.Req9 심판 일치 확인. 하나라도 다르면 0 이 아닌 값으로 끝난다 — 그때는 실행하지 않고 보고한다 (CLAUDE.md §10-3).
 
-확인: ① skeleton 서브모듈 커밋 = cd9c13e (OPT.Dec9) ② E1 시나리오 41개 sha256 = skeleton docs/reports/s1_8_scenario_sha256.json
+확인: ① skeleton 서브모듈 커밋 = 고정 커밋 (OPT.Dec9 · Dec34 — 55b0e35) ② E1 시나리오 41개 sha256 = skeleton docs/reports/s1_8_scenario_sha256.json
 ③ 서포트 표 source = private, sha256 = E1 동결값 (PIPE_SUPPORT_STANDARD).
 사용: python -m opt.judge_check
 """
@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SK = ROOT / "skeleton"
-SKELETON_COMMIT = "cd9c13e527935c43d79e6e60895260264617adba"
+SKELETON_COMMIT = "55b0e350270c2319d9d7c0ab2180b39b1466728e"   # OPT.Dec34 · Req12 (2026-11-27): cd9c13e → 55b0e35. 심판 기준 (E1 동결 측정 커밋) 은 cd9c13e 그대로
 SUPPORT_SHA256 = "ac2ba6a2974b381938212b84867f1d6f34d87e885b2e1da5a0fc302cb19cffb3"
 
 
